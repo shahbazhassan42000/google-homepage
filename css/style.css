@@ -1,4 +1,27 @@
+body{
+    font-family: arial,sans-serif;
+}
 header{
     display: flex;
     justify-content: flex-end;
+    padding: 6px;
+    height: 7.5vh;
+    align-items: center;
+    font-size: 13px;
+}
+header ui i:first-child{
+    margin-right: 17px;
+}
+header ui i a{
+    color:#000000DE;
+    text-decoration-line: none;
+}
+header ui i a:hover{
+    text-decoration-line: underline;
+}
+.text-link:hover{
+    background-color: rgba(60,64,67,0.08);
+}
+header ui i{
+    cursor: pointer;
 }
