@@ -1,6 +1,7 @@
 body{
     font-family: arial,sans-serif;
 }
+/*Header styles*/
 header{
     display: flex;
     justify-content: flex-end;
@@ -19,9 +20,59 @@ header ui i a{
 header ui i a:hover{
     text-decoration-line: underline;
 }
-.text-link:hover{
-    background-color: rgba(60,64,67,0.08);
-}
 header ui i{
     cursor: pointer;
 }
+/*Header links*/
+.google-apps-img{
+    margin: 19px 7px -14px 17px;
+    padding: 8px;
+    width:22px;
+}
+.google-apps-img:hover,.profile-pic:hover{
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 50%;
+}
+.profile-pic{
+    padding: 4px;
+    margin: 0px 18px -14px 0px;
+    border-radius: 50%;
+}
+/*Google-apps container*/
+.google-apps-container{
+    position:absolute;
+    width: 300px;
+    top: 83px;
+    right: 24px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 2px 0px rgb(60 64 67/30%),0px 2px 6px 2px rgb(60 64 67/15%);
+    overflow-x: hidden;
+    /*display:none;*/
+    overflow-y: auto;
+    padding: 16px 0px 0px 19px;
+}
+.google-apps-link{
+    display: inline-block;
+    padding:6px 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 84px;
+    margin: 0px 11px 16px 0px;
+}
+.google-apps-link:hover{
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 8px;
+}
+.google-apps-icon{
+    height: 52px;
+    width: 52px;
+}
+.google-apps-text{
+    color: #202124;
+    font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+
