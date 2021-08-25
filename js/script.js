@@ -21,6 +21,4 @@ document.addEventListener("DOMContentLoaded",function () {
          google_apps_img_container.style.display="none";
       }
    });
-
-
 });
