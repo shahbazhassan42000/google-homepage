@@ -38,27 +38,36 @@ header ui i{
     margin: 0px 18px -14px 0px;
     border-radius: 50%;
 }
-/*Google-apps container*/
-.google-apps-container{
+/*Google-apps container && Google-account container*/
+.google-apps-container,.google-account-container{
     position:absolute;
+    height: 448px;
     width: 300px;
     top: 83px;
     right: 24px;
     border-radius: 8px;
     background: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
     border: 1px solid rgba(0,0,0,0.2);
     box-shadow: 0px 1px 2px 0px rgb(60 64 67/30%),0px 2px 6px 2px rgb(60 64 67/15%);
-    overflow-x: hidden;
-    /*display:none;*/
-    overflow-y: auto;
+    display:none;
+    max-height: calc(-103px + 100vh);
     padding: 16px 0px 0px 19px;
 }
+.google-account-container{
+    margin:0px;
+    padding: 0px;
+    width: 358px;
+    text-align: center;
+}
 .google-apps-link{
+    cursor: pointer;
     display: inline-block;
     padding:6px 0px;
     text-align: center;
     text-decoration: none;
-    width: 84px;
+    width: 80px;
     margin: 0px 11px 16px 0px;
 }
 .google-apps-link:hover{
@@ -98,5 +107,131 @@ header ui i{
     position: absolute;
     left:0;
 }
+/*customize scroll bar of google-apps*/
+.google-apps-container::-webkit-scrollbar {
+    width: 16px;
+}
+.google-apps-container::-webkit-scrollbar-track {
+    background: none;
+    border: none;
+}
+.google-apps-container::-webkit-scrollbar-thumb {
+    background: #dadce0;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    box-shadow: none;
+    min-height: 50px;
+}
+/*More Button*/
+.more-button{
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #1a73e8;
+    display: block;
+    font: 500 14px/16px 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    margin: 16px auto 20px auto;
+    max-width: 265px;
+    outline: 0;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    width: fit-content;
+}
+/*username text*/
+.username-text{
+    font: 500 16px/22px 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    color:#202124;
+    margin:5px 0px;
+}
+/*email text*/
+.email-text{
+    font: 500 14px/19px 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    color:#5f6368;
+}
+/*upload profile*/
+.upload-circle{
+    position: absolute;
+    border-radius: 50%;
+    top: 71px;
+    left: 197px;
+    height: 32px;
+    width: 32px;
+    background-color:#fff;
+}
+.upload-icon-holder{
+    bottom: 0;
+    -webkit-box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+    box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+    margin: 0px 2.5px 3px;
+    outline: 0;
+    position: absolute;
+    right: 0;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
+.upload-icon-holder:hover .upload-icon{
+    fil:#1a73e8;
+    color:#1a73e8;
+}
+/*upload profile icon*/
+.upload-icon{
+    color: #5f6368;
+    fill: currentColor;
+    margin: 0px;
+}
+/*Manage Account Button*/
+.manage-account-btn{
+    border-radius: 100px;
+}
+/*Google-account btn*/
+.account-btn,.manage-account-btn{
+    color:#3c4043;
+    background-color: #ffffff;
+}
+/*Hover button Style*/
+.account-btn:hover,.add-account:hover,.other-links:hover,.manage-account-btn:hover{
+    background-color: #f7f8f8;
+}
+/*add account button*/
+.add-account{
+    border-color:#e8eaed;
+    color:#3c4043;
+    padding: 17px 67px 17px 0px;
+    width: 100%;
+    max-width: 100%;
+    border-right: 0px;
+    border-radius: 0px;
+    border-left: 0px;
+}
+/*add account icon*/
+.add-account-icon{
+    margin:0px 15px -3px 0px;
+    color: #5f6368;
+    fill: currentColor;
+}
+/*privacy policy && terms of condition*/
+.center-box{
+    padding: 20px 41px;
+    text-align: center;
+}
+.other-links{
+    font-size: 12px;
+    border: none;
+    display:inline;
+    color:#5f6368;
+    padding: 5px;
+}
+.dot{
+    color:#5f6368;
+    text-align: center;
+    white-space: normal;
+    line-height: normal;
+}
+
 
 
