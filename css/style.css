@@ -65,6 +65,18 @@ header ui i{
     background-color: rgba(60,64,67,0.08);
     border-radius: 8px;
 }
+.long-link:hover{
+    margin-bottom: 0px;
+    padding-bottom: 22px;
+}
+.long-link:hover .long-text{
+    margin-bottom: -15px;
+}
+.google-apps-link:hover .google-apps-text{
+    overflow-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+}
 .google-apps-icon{
     height: 52px;
     width: 52px;
@@ -73,6 +85,18 @@ header ui i{
     color: #202124;
     font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
     font-size: 14px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*horizontal bar*/
+.bar{
+    border-bottom: 1px solid #e8eaed;
+    display: block;
+    width: 100%;
+    position: absolute;
+    left:0;
 }
 
 
