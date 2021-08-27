@@ -1,6 +1,7 @@
 body{
     font-family: arial,sans-serif;
 }
+/************************************** DESKTOP VIEW ****************************************/
 /*------------------------------------- HEADER STYLING -------------------------------------*/
 header{
     margin-top: -10px;
@@ -16,6 +17,18 @@ header ui i:first-child{
 header ui i a{
     color:#000000DE;
     text-decoration-line: none;
+}
+/*hiding mobile only link*/
+i:nth-child(3),i:nth-child(2),.hamburger,.hamburger-container,.hamburger{
+    display: none;
+}
+.hamburger-container{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 header ui i a:hover{
     text-decoration-line: underline;
@@ -272,7 +285,6 @@ header ui i{
     background-color: transparent;
     border: none;
     color:rgba(0,0,0,0.87);
-    font-family: arial,sans-serif;
     font-size: 16px;
     word-wrap: break-word;
     outline: none;
@@ -299,7 +311,6 @@ header ui i{
     border:1px solid #f8f9fa;
     text-decoration: none;
     color:#3c4043;
-    font-family: arial, sans-serif;
     font-size: 14px;
     padding: 10px 16px;
     line-height: 27px;
@@ -317,7 +328,6 @@ header ui i{
     display: inline-block;
     line-height: 28px;
     font-size: small;
-    font-family: arial, sans-serif;
 }
 .google-lang a{
     text-decoration: none;
@@ -334,7 +344,6 @@ footer{
     left: 0;
     flex-flow: column;
     background: #f2f2f2;
-    font-family: arial, sans-serif;
 }
 .first-footer{
     font-size: 15px;
@@ -352,6 +361,142 @@ footer{
     color:#70757A;
     padding: 0px 20px 0px 0px;
     text-decoration: none;
+}
+/************************************** MOBILE VIEW *****************************************/
+@media only screen and (max-width: 600px){
+    /*Header*/
+    .hamburger{
+        display: block;
+        position: fixed;
+        left: 0;
+        top:10px;
+        padding-left: 10px;
+    }
+    /*hamburger off canvas*/
+    .hamburger-menu{
+        background-color: #fff;
+        padding: 10px;
+        z-index: 1;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        width: 70%;
+    }
+    ui{
+        list-style: none;
+    }
+    .hamburger-menu ui li{
+        margin:15px 0px;
+    }
+    .hamburger-bar{
+        border-bottom: 1px solid #dadce0;
+        display: block;
+        width: 120%;
+        margin-left: -10px;
+    }
+    .hamburger-icons{
+        margin:0px 12px -4px 0px;
+    }
+    .hamburger-links{
+        color:#70757a;
+        text-decoration: none;
+    }
+    .google-apps-img{
+        margin:-5px 0px -12px 0px;
+        padding: 5px
+    }
+    .profile-pic{
+        height: 30px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    i:nth-child(2){
+        position: fixed;
+        left: 55px;
+        top:15px;
+    }
+    i:nth-child(4){
+        position: fixed;
+        top:15px;
+        left:90px;
+    }
+    i:nth-child(2){
+        display: inline-block;
+        color: #4285f4;
+        border-bottom: 2px solid #4285f4;
+    }
+    .text-link a{
+        color: #70757a;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .text-link a:active{
+        color: #4285f4;
+        border-bottom: 2px solid #4285f4;
+    }
+    /*Toggle menus*/
+    .google-apps-container{
+        top:55px;
+        right:7px;
+        width: 80%;
+    }
+    .google-apps-link{
+        width: 27%;
+    }
+    .google-account-container{
+        top:55px;
+        right:7px;
+        width: 95%;
+    }
+    .upload-circle{
+        left:55%;
+    }
+    .center-box a{
+        font-size: 12px;
+    }
+    .center-box .dot{
+        font-size: 12px;
+    }
+    /*content*/
+    .google-search-engine-img{
+        width: 80%;
+        height: 10%;
+        margin: 50px 0px 20px 0px;
+    }
+    .search-bar-container{
+        height: 35px;
+        margin:0px 5px 20px 5px;
+    }
+    .search{
+        padding: 6px;
+    }
+    .search svg{
+        width: 25px;
+        height: 25px;
+    }
+    .mic{
+        padding: 0 5px;
+    }
+    .mic svg path{
+        color:#9aa0a6;
+        fill:#9aa0a6;
+    }
+    .first-footer{
+        padding: 5px;
+    }
+    .second-footer{
+        justify-content:center;
+    }
+    /*hiding elements in mobile view*/
+    .google-links-container,.first{
+        display: none;
+    }
 }
 
 

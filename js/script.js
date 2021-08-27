@@ -43,5 +43,29 @@ document.addEventListener("DOMContentLoaded",function () {
          google_account_btn.classList.remove("focus");
       }
    });
+   //hamburger toggle
+   let hamburger_btn=document.querySelector(".hamburger");
+   let hamburger_container=document.querySelector(".hamburger-menu");
+   let humburger_overlayer=document.querySelector(".hamburger-container");
+   hamburger_btn.addEventListener('click',function () {
+      if(hamburger_container.style.display==="block")
+      {
+         hamburger_container.style.display="none";
+         humburger_overlayer.style.display="none";
+      }
+      else
+      {
+         hamburger_container.style.display="block";
+         humburger_overlayer.style.display="block";
+         humburger_overlayer.style.backgroundColor="rgba(0, 0, 0, 0.5)";
+      }
+   });
+   document.addEventListener('mouseup',function (event) {
+      if(!hamburger_container.contains(event.target) && event.target!=hamburger_btn)
+      {
+         hamburger_container.style.display="none";
+         humburger_overlayer.style.display="none";
+      }
+   });
 
 });

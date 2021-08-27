@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link rel="icon" type="image/png" href="images/logo/fav-icon.svg">
     <link rel="stylesheet" href="css/cssReset.css">
@@ -11,6 +12,10 @@
 <body>
 <header>
 <ui>
+    <div class="hamburger">
+        <svg style="fill:#70757a;width:24px;height:24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-iml="1630089300460"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+    </div>
+    <i class="text-link"><a href="#">All</a></i>
     <i class="text-link"><a href="https://mail.google.com/mail/u/0/">Gmail</a></i>
     <i class="text-link"><a href="https://www.google.com.pk/imghp?hl=en&ogbl">Images</a></i>
     <i id="btn"><img class="google-apps-img" src="images/logo/google-apps.svg" alt="google-apps logo"></i>
@@ -195,17 +200,40 @@
         <a dir="rtl" href="https://www.google.com/setprefs?sig=0_I47YMC6Ck2NrHpNT_ZORwnPY7d0%3D&hl=sd&source=homepage&sa=X&ved=0ahUKEwiynavYss_yAhWmxTgGHV3GCBcQ2ZgBCBE">سنڌي</a>
     </p>
 </section>
+<div class="hamburger-container">
+    <div class="hamburger-menu">
+        <img height="30px" src="images/logo/google-search-logo.png" alt="google logo">
+        <ui>
+            <li><a class="hamburger-links" href="/?hl=en-PK&sa=X&ved=0ahUKEwiAgJPw8tHyAhUNq5QKHak7CDkQnZcCCAQ"><img class="hamburger-icons" src="images/logo/home-icon.svg" alt="home icon">Home</a></li>
+            <li><a class="hamburger-links" href="https://myactivity.google.com/product/search?utm_source=google&hl=en-PK&sa=X&ved=0ahUKEwiAgJPw8tHyAhUNq5QKHak7CDkQsLsECAU"><img class="hamburger-icons" src="images/logo/search-history-icon.svg" alt="search history icon">Search history</a></li>
+            <li><a class="hamburger-links" href="/save?hl=en-PK&sa=X&ved=0ahUKEwiAgJPw8tHyAhUNq5QKHak7CDkQnpcCCAY"><img class="hamburger-icons" src="images/logo/collections-icon.svg" alt="collections icon">Collections</a></li>
+            <li><a class="hamburger-links" href="/search/managesearches?sa=X&ved=0ahUKEwiAgJPw8tHyAhUNq5QKHak7CDkQ34oDCAc"><img class="hamburger-icons" src="images/logo/offline-searches-icon.svg" alt="offline searches icon">Offline searches</a></li>
+        </ui>
+        <span class="hamburger-bar"></span>
+        <ui>
+            <li><a class="hamburger-links" href="/preferences?hl=en-PK&sa=X&ved=0ahUKEwir47jt69HyAhXBG6YKHZQsAjMQn5cCCAg"><img class="hamburger-icons" src="images/logo/settings-icon.svg" alt="settings icon">Settings</a></li>
+            <li><a class="hamburger-links" href="/safesearch?hl=en-PK&prev=https://www.google.com.pk/imghp?hl%3Den&sa=X&ved=0ahUKEwir47jt69HyAhXBG6YKHZQsAjMQkqkxCAk"><img class="hamburger-icons" src="images/logo/your-data-icon.svg">Your data in Search</a></li>
+            <li><a class="hamburger-links" href="https://google.com/search/howsearchworks/"><img class="hamburger-icons" src="images/logo/hide-explicit-icon.svg" alt="hide explicit results icon">Hide explicit results: off</a></li>
+            <li><a class="hamburger-links" href="https://google.com/search/howsearchworks/"><img class="hamburger-icons" src="images/logo/how-search-works-icon.svg" alt="how search works icon">How Search works</a></li>
+            <li><a class="hamburger-links" href="https://support.google.com/websearch/?p=ws_images_SERP&hl=en-PK"><img class="hamburger-icons" src="images/logo/help-icon.svg" alt="help icon">Help</a></li>
+            <li><a class="hamburger-links" href="#"><img class="hamburger-icons" src="images/logo/feedback-icon.svg" alt="feedback icon">Send feedback</a></li>
+
+
+        </ui>
+
+    </div>
+</div>
 <footer>
     <div class="first-footer">Pakistan</div>
 
     <div class="second-footer">
-        <div class="">
+        <div class="first">
             <a href="https://about.google/?utm_source=google-PK&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1">About</a>
             <a href="https://www.google.com/intl/en_pk/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1">Advertising</a>
             <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1">Business</a>
-            <a href="https://google.com/search/howsearchworks/?fg=1">  How Search works </a>
+            <a href="https://google.com/search/howsearchworks/?fg=1">How Search works </a>
         </div>
-        <div class="">
+        <div class="second">
             <a href="https://policies.google.com/privacy?hl=en-PK&amp;fg=1">Privacy</a>
             <a href="https://policies.google.com/terms?hl=en-PK&amp;fg=1">Terms</a>
             <a href="#">Settings</a>
