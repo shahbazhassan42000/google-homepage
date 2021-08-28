@@ -19,7 +19,7 @@ header ui i a{
     text-decoration-line: none;
 }
 /*hiding mobile only link*/
-i:nth-child(3),i:nth-child(2),.hamburger,.hamburger-container,.hamburger{
+i:nth-child(3),i:nth-child(2),.hamburger,.hamburger-container,.hamburger,.popup-container{
     display: none;
 }
 .hamburger-container{
@@ -342,6 +342,65 @@ header ui i{
 .google-lang a:hover,.second-footer a:hover{
     text-decoration: underline;
 }
+/*------------------------------------- POPUP STYLING -------------------------------------*/
+.popup-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top:0;
+}
+.popup{
+    position: fixed;
+    top:30%;
+    left: 30%;
+    z-index: 1;
+    display: flex;
+    background-color: #fff;
+    width: 40%;
+    border-radius: 6px;
+    box-shadow: 0 2px rgb(0 0 0 / 30%);
+    padding: 30px 20px;
+    text-align: center;
+    margin:0px auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.popup p,.popup a{
+    font-size: 1.2vw;
+}
+.popup-img{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    border: 1px solid #3c4043;
+    margin-right: 20px;
+}
+.popup a{
+    text-decoration: none;
+}
+.popup-text{
+    margin-bottom: 10px;
+}
+.popup-text a{
+    font-weight: 700;
+    color:#3c4043;
+}
+.popup-text a:hover{
+    color:rgba(60,64,67,0.90);
+    text-decoration: underline;
+}
+.popup-link{
+    color:white;
+    padding: 5px 10px;
+    background-color: #202124;
+    border-radius: 4px;
+}
+.popup-link:hover{
+    background-color: rgba(60,64,67,0.08);
+    color:#202124;
+}
 /*------------------------------------- FOOTER STYLING -------------------------------------*/
 footer{
     position: fixed;
@@ -478,6 +537,9 @@ footer{
     .search-bar-container{
         height: 35px;
         margin:0px 5px 20px 5px;
+    }
+    .search-bar{
+        margin-top: 1px;
     }
     .search{
         padding: 6px;
