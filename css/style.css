@@ -258,6 +258,8 @@ header ui i{
     background-color:#fff;
     box-shadow: none;
     display: flex;
+    flex-wrap: wrap;
+
     margin:0px auto;
     border: 1px solid #dfe1e5;
     width: auto;
@@ -280,7 +282,7 @@ header ui i{
     width:20px;
 }
 .search-bar{
-    flex:100%;
+    flex-grow: 1;
     margin-top: 3px;
     background-color: transparent;
     border: none;
@@ -292,7 +294,7 @@ header ui i{
     height: 34px;
 }
 .mic{
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -306,13 +308,17 @@ header ui i{
 .google-links-container{
     margin: 30px auto;
 }
+.spacer{
+    padding: 0px;
+    visibility: hidden;
+}
 .google-links{
     background-color: #f8f9fa;
     border:1px solid #f8f9fa;
     text-decoration: none;
     color:#3c4043;
     font-size: 14px;
-    padding: 10px 16px;
+    padding: 4px 14px;
     line-height: 27px;
     min-width: 54px;
     border-radius: 4px;

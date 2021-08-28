@@ -67,5 +67,18 @@ document.addEventListener("DOMContentLoaded",function () {
          humburger_overlayer.style.display="none";
       }
    });
+   //Google search functionality
+   const search_Input=document.querySelector(".search-bar");
+   const form=document.querySelector("#searchForm");
+
+   form.addEventListener('submit',(event)=>{
+      event.preventDefault(); //prevent reloading of page on submit button
+      const searchQuery=search_Input.value;
+      if(searchQuery.length===0)
+         return false;
+      else
+         window.location=`https://www.google.com/search?query=${searchQuery}`;
+   });
+
 
 });
