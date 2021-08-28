@@ -283,7 +283,7 @@ header ui i{
 }
 .search-bar{
     flex-grow: 1;
-    margin-top: 3px;
+    margin-top: 5px;
     background-color: transparent;
     border: none;
     color:rgba(0,0,0,0.87);
